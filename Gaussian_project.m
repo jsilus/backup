@@ -125,5 +125,5 @@ function results = test_matrix(A, b, desc, results)
     fprintf("\tTime: %fs\n", time_gauss_seidel);
 
     % return for later csv writing
-    results = [results; absolute_error_gauss_elim, relative_error_gauss_elim, time_gauss_elim, absolute_error_gauss_seidel, relative_error_gauss_seidel, time_gauss_seidel];
+    results = [results; width(A), absolute_error_gauss_elim, relative_error_gauss_elim, time_gauss_elim; width(A), absolute_error_gauss_seidel, relative_error_gauss_seidel, time_gauss_seidel];
 end
